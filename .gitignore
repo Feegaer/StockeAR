@@ -1,0 +1,34 @@
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings
+.vscode/
+.vs
+
+# Rider project files
+.idea/
+
+# Others
+*.log
+*.vspscc
+*.vssscc
+
+# Windows thumbnail cache files
+Thumbs.db
+Desktop.ini
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Publish output
+publish/

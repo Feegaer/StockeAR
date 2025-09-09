@@ -1,0 +1,59 @@
+/* /////////////////// USERS DATABASE /////////////////////////// */
+CREATE DATABASE DBUsers
+GO
+USE DBUsers
+GO
+
+CREATE TABLE _user (
+	ID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	name NVARCHAR(40),
+	lastname NVARCHAR(40),
+	username NVARCHAR(20) NOT NULL,
+	password NVARCHAR(12) NOT NULL,
+	rol NVARCHAR(15) NOT NULL,
+	created_at DATETIME2 DEFAULT SYSDATETIME()
+)
+GO
+
+INSERT INTO _user(username, password, rol) VALUES('admin', 'admin', 'admin'),('user', 'user', 'user'), ('guest', 'guest', 'guest')
+GO
+
+/* /////////////////// PROJECT /////////////////////////// */
+CREATE DATABASE StockeAR
+GO
+USE StockeAR
+GO
+
+CREATE TABLE provider (
+	ID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	company NVARCHAR(30) NOT NULL,
+	created_at DATETIME2 DEFAULT SYSDATETIME()
+)
+GO
+
+CREATE TABLE client (
+	ID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	name NVARCHAR(40) NOT NULL,
+	lastname NVARCHAR(40) NOT NULL,
+	company NVARCHAR(40) NOT NULL,
+	created_at DATETIME2 DEFAULT SYSDATETIME()
+)
+GO
+
+CREATE TABLE product (
+	ID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	name NVARCHAR(40) NOT NULL,
+	price_per_unit DECIMAL(10,2) NOT NULL DEFAULT 0,
+	stock INT NOT NULL DEFAULT 0,
+	created_at DATETIME2 DEFAULT SYSDATETIME()
+)
+GO
+
+CREATE TABLE sale (
+	ID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	clientID INT NOT NULL,
+	data NVARCHAR(MAX) NOT NULL,
+	sale_date DATETIME2 DEFAULT SYSDATETIME(),
+	FOREIGN KEY (clientID) REFERENCES client(ID)
+)
+GO

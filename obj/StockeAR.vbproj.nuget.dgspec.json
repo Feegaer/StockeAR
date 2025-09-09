@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\StockeAR.vbproj": {}
+    "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\StockeAR.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\StockeAR.vbproj": {
+    "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\StockeAR.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\StockeAR.vbproj",
+        "projectUniqueName": "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\StockeAR.vbproj",
         "projectName": "StockeAR",
-        "projectPath": "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\StockeAR.vbproj",
+        "projectPath": "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\StockeAR.vbproj",
         "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\obj\\",
+        "outputPath": "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,11 +43,18 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

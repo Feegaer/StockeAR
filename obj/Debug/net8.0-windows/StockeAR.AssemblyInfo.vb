@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("StockeAR"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6729938fd3fbcdcb6d2c5fee094b45fd18551f2e"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("StockeAR"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("StockeAR"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
