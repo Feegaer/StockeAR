@@ -22,26 +22,26 @@ Partial Class CreateProductUI
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        btnSave = New Button()
+        BtnSave = New Button()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
-        btnCancel = New Button()
+        TxtProductName = New TextBox()
+        TxtPricePerUnit = New TextBox()
+        TxtStock = New TextBox()
+        BtnCancel = New Button()
         SuspendLayout()
         ' 
-        ' btnSave
+        ' BtnSave
         ' 
-        btnSave.BackColor = Color.PaleGreen
-        btnSave.Location = New Point(77, 276)
-        btnSave.Name = "btnSave"
-        btnSave.Size = New Size(73, 23)
-        btnSave.TabIndex = 0
-        btnSave.Text = "Save"
-        btnSave.UseVisualStyleBackColor = False
+        BtnSave.BackColor = Color.PaleGreen
+        BtnSave.Location = New Point(77, 276)
+        BtnSave.Name = "BtnSave"
+        BtnSave.Size = New Size(73, 23)
+        BtnSave.TabIndex = 0
+        BtnSave.Text = "Save"
+        BtnSave.UseVisualStyleBackColor = False
         ' 
         ' Label1
         ' 
@@ -80,61 +80,61 @@ Partial Class CreateProductUI
         Label4.TabIndex = 4
         Label4.Text = "Stock"
         ' 
-        ' TextBox1
+        ' TxtProductName
         ' 
-        TextBox1.CharacterCasing = CharacterCasing.Upper
-        TextBox1.Location = New Point(78, 127)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(152, 23)
-        TextBox1.TabIndex = 5
+        TxtProductName.CharacterCasing = CharacterCasing.Upper
+        TxtProductName.Location = New Point(78, 127)
+        TxtProductName.Name = "TxtProductName"
+        TxtProductName.Size = New Size(152, 23)
+        TxtProductName.TabIndex = 5
         ' 
-        ' TextBox2
+        ' TxtPricePerUnit
         ' 
-        TextBox2.CharacterCasing = CharacterCasing.Upper
-        TextBox2.Location = New Point(78, 181)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(152, 23)
-        TextBox2.TabIndex = 6
+        TxtPricePerUnit.CharacterCasing = CharacterCasing.Upper
+        TxtPricePerUnit.Location = New Point(78, 181)
+        TxtPricePerUnit.Name = "TxtPricePerUnit"
+        TxtPricePerUnit.Size = New Size(152, 23)
+        TxtPricePerUnit.TabIndex = 6
         ' 
-        ' TextBox3
+        ' TxtStock
         ' 
-        TextBox3.Location = New Point(78, 234)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(152, 23)
-        TextBox3.TabIndex = 7
+        TxtStock.Location = New Point(78, 234)
+        TxtStock.Name = "TxtStock"
+        TxtStock.Size = New Size(152, 23)
+        TxtStock.TabIndex = 7
         ' 
-        ' btnCancel
+        ' BtnCancel
         ' 
-        btnCancel.BackColor = Color.Transparent
-        btnCancel.FlatAppearance.BorderColor = Color.Silver
-        btnCancel.Location = New Point(157, 276)
-        btnCancel.Name = "btnCancel"
-        btnCancel.Size = New Size(73, 23)
-        btnCancel.TabIndex = 8
-        btnCancel.Text = "Cancel"
-        btnCancel.UseVisualStyleBackColor = False
+        BtnCancel.BackColor = Color.Transparent
+        BtnCancel.FlatAppearance.BorderColor = Color.Silver
+        BtnCancel.Location = New Point(157, 276)
+        BtnCancel.Name = "BtnCancel"
+        BtnCancel.Size = New Size(73, 23)
+        BtnCancel.TabIndex = 8
+        BtnCancel.Text = "Cancel"
+        BtnCancel.UseVisualStyleBackColor = False
         ' 
         ' CreateProductUI
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(307, 372)
-        Controls.Add(btnCancel)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(BtnCancel)
+        Controls.Add(TxtStock)
+        Controls.Add(TxtPricePerUnit)
+        Controls.Add(TxtProductName)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(btnSave)
+        Controls.Add(BtnSave)
         Name = "CreateProductUI"
         Text = "CreateProductUI"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents btnSave As Button
+    Friend WithEvents BtnSave As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
@@ -142,5 +142,8 @@ Partial Class CreateProductUI
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents btnCancel As Button
+    Friend WithEvents BtnCancel As Button
+    Friend WithEvents TxtProductName As TextBox
+    Friend WithEvents TxtPricePerUnit As TextBox
+    Friend WithEvents TxtStock As TextBox
 End Class

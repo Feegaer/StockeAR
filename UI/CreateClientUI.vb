@@ -6,11 +6,11 @@ Public Class CreateClientUI
     End Sub
 
     Private Sub BtnSave_Click(sender As Object, e As EventArgs) Handles BtnSave.Click
-        Dim Name As String = TXTName.Text
-        Dim Lastname As String = TXTLastname.Text
-        Dim Company As String = TXTCompany.Text
+        Dim Name As String = Trim(TXTName.Text)
+        Dim Lastname As String = Trim(TXTLastname.Text)
+        Dim Company As String = Trim(TXTCompany.Text)
 
-        If Name = "" Or Lastname = "" Or Company = "" Then
+        If String.IsNullOrEmpty(Name) Or String.IsNullOrEmpty(Lastname) Or String.IsNullOrEmpty(Company) Then
             MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
