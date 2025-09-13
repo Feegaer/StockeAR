@@ -23,14 +23,14 @@ Partial Class CreateClientUI
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Label1 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
+        BtnSave = New Button()
+        BtnCancel = New Button()
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
+        TXTName = New TextBox()
+        TXTLastname = New TextBox()
+        TXTCompany = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
@@ -43,24 +43,24 @@ Partial Class CreateClientUI
         Label1.TabIndex = 0
         Label1.Text = "Create Client"
         ' 
-        ' Button1
+        ' BtnSave
         ' 
-        Button1.BackColor = Color.LightGreen
-        Button1.Location = New Point(63, 249)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(67, 29)
-        Button1.TabIndex = 1
-        Button1.Text = "Save"
-        Button1.UseVisualStyleBackColor = False
+        BtnSave.BackColor = Color.LightGreen
+        BtnSave.Location = New Point(63, 249)
+        BtnSave.Name = "BtnSave"
+        BtnSave.Size = New Size(67, 29)
+        BtnSave.TabIndex = 1
+        BtnSave.Text = "Save"
+        BtnSave.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' BtnCancel
         ' 
-        Button2.Location = New Point(136, 249)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(67, 29)
-        Button2.TabIndex = 2
-        Button2.Text = "Cancel"
-        Button2.UseVisualStyleBackColor = True
+        BtnCancel.Location = New Point(136, 249)
+        BtnCancel.Name = "BtnCancel"
+        BtnCancel.Size = New Size(67, 29)
+        BtnCancel.TabIndex = 2
+        BtnCancel.Text = "Cancel"
+        BtnCancel.UseVisualStyleBackColor = True
         ' 
         ' Label2
         ' 
@@ -89,40 +89,40 @@ Partial Class CreateClientUI
         Label4.TabIndex = 5
         Label4.Text = "Company"
         ' 
-        ' TextBox1
+        ' TXTName
         ' 
-        TextBox1.Location = New Point(63, 116)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(139, 23)
-        TextBox1.TabIndex = 6
+        TXTName.Location = New Point(63, 116)
+        TXTName.Name = "TXTName"
+        TXTName.Size = New Size(139, 23)
+        TXTName.TabIndex = 6
         ' 
-        ' TextBox2
+        ' TXTLastname
         ' 
-        TextBox2.Location = New Point(63, 164)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(139, 23)
-        TextBox2.TabIndex = 7
+        TXTLastname.Location = New Point(63, 164)
+        TXTLastname.Name = "TXTLastname"
+        TXTLastname.Size = New Size(139, 23)
+        TXTLastname.TabIndex = 7
         ' 
-        ' TextBox3
+        ' TXTCompany
         ' 
-        TextBox3.Location = New Point(63, 211)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(139, 23)
-        TextBox3.TabIndex = 8
+        TXTCompany.Location = New Point(63, 211)
+        TXTCompany.Name = "TXTCompany"
+        TXTCompany.Size = New Size(139, 23)
+        TXTCompany.TabIndex = 8
         ' 
         ' CreateClientUI
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(266, 332)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(TXTCompany)
+        Controls.Add(TXTLastname)
+        Controls.Add(TXTName)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(BtnCancel)
+        Controls.Add(BtnSave)
         Controls.Add(Label1)
         Name = "CreateClientUI"
         Text = "CreateClientUI"
@@ -131,12 +131,12 @@ Partial Class CreateClientUI
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnSave As Button
+    Friend WithEvents BtnCancel As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TXTName As TextBox
+    Friend WithEvents TXTLastname As TextBox
+    Friend WithEvents TXTCompany As TextBox
 End Class
