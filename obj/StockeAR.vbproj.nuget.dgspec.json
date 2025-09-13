@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\StockeAR.vbproj": {}
+    "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\StockeAR.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\StockeAR.vbproj": {
+    "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\StockeAR.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\StockeAR.vbproj",
+        "projectUniqueName": "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\StockeAR.vbproj",
         "projectName": "StockeAR",
-        "projectPath": "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\StockeAR.vbproj",
+        "projectPath": "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\StockeAR.vbproj",
         "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ezequiel\\Desktop\\Proyectos\\StockeAR\\obj\\",
+        "outputPath": "C:\\Users\\Ezequiel\\source\\repos\\StockeAR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
