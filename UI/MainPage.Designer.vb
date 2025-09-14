@@ -45,7 +45,7 @@ Partial Class MainPage
         MenuStrip1.Items.AddRange(New ToolStripItem() {MainPageToolStripMenuItem, ProductToolStripMenuItem, ClientToolStripMenuItem, ProviderToolStripMenuItem, UserToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(800, 24)
+        MenuStrip1.Size = New Size(1008, 24)
         MenuStrip1.TabIndex = 0
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -65,13 +65,13 @@ Partial Class MainPage
         ' CreateProductToolStripMenuItem
         ' 
         CreateProductToolStripMenuItem.Name = "CreateProductToolStripMenuItem"
-        CreateProductToolStripMenuItem.Size = New Size(180, 22)
+        CreateProductToolStripMenuItem.Size = New Size(109, 22)
         CreateProductToolStripMenuItem.Text = "Create"
         ' 
         ' ListProductsToolStripMenuItem
         ' 
         ListProductsToolStripMenuItem.Name = "ListProductsToolStripMenuItem"
-        ListProductsToolStripMenuItem.Size = New Size(180, 22)
+        ListProductsToolStripMenuItem.Size = New Size(109, 22)
         ListProductsToolStripMenuItem.Text = "List All"
         ' 
         ' ClientToolStripMenuItem
@@ -133,16 +133,16 @@ Partial Class MainPage
         ' 
         ' PanelMainPageContainer
         ' 
-        PanelMainPageContainer.Location = New Point(12, 27)
+        PanelMainPageContainer.Location = New Point(26, 47)
         PanelMainPageContainer.Name = "PanelMainPageContainer"
-        PanelMainPageContainer.Size = New Size(776, 411)
+        PanelMainPageContainer.Size = New Size(956, 488)
         PanelMainPageContainer.TabIndex = 1
         ' 
         ' MainPage
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1008, 561)
         Controls.Add(PanelMainPageContainer)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1

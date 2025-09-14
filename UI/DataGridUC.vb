@@ -24,4 +24,11 @@ Public Class DataGridUC
             End Using
         End Using
     End Sub
+
+    Private Sub DataGridView1_RowEnter(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.RowEnter
+        TBProductName.Text = DataGridView1.Rows(e.RowIndex).Cells("name").Value.ToString()
+        TBPricePerUnit.Text = DataGridView1.Rows(e.RowIndex).Cells("price_per_unit").Value.ToString()
+        TBStock.Text = DataGridView1.Rows(e.RowIndex).Cells("stock").Value.ToString()
+        TBCreatedAt.Text = DataGridView1.Rows(e.RowIndex).Cells("created_at").Value.ToString()
+    End Sub
 End Class
