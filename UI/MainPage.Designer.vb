@@ -26,7 +26,7 @@ Partial Class MainPage
         MainPageToolStripMenuItem = New ToolStripMenuItem()
         ProductToolStripMenuItem = New ToolStripMenuItem()
         CreateProductToolStripMenuItem = New ToolStripMenuItem()
-        ListToolStripMenuItem = New ToolStripMenuItem()
+        ListProductsToolStripMenuItem = New ToolStripMenuItem()
         ClientToolStripMenuItem = New ToolStripMenuItem()
         CreateClientToolStripMenuItem1 = New ToolStripMenuItem()
         ListAllToolStripMenuItem = New ToolStripMenuItem()
@@ -36,6 +36,7 @@ Partial Class MainPage
         UserToolStripMenuItem = New ToolStripMenuItem()
         CreateUserToolStripMenuItem3 = New ToolStripMenuItem()
         ListAllToolStripMenuItem2 = New ToolStripMenuItem()
+        PanelMainPageContainer = New Panel()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -56,7 +57,7 @@ Partial Class MainPage
         ' 
         ' ProductToolStripMenuItem
         ' 
-        ProductToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {CreateProductToolStripMenuItem, ListToolStripMenuItem})
+        ProductToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {CreateProductToolStripMenuItem, ListProductsToolStripMenuItem})
         ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
         ProductToolStripMenuItem.Size = New Size(61, 20)
         ProductToolStripMenuItem.Text = "Product"
@@ -67,11 +68,11 @@ Partial Class MainPage
         CreateProductToolStripMenuItem.Size = New Size(180, 22)
         CreateProductToolStripMenuItem.Text = "Create"
         ' 
-        ' ListToolStripMenuItem
+        ' ListProductsToolStripMenuItem
         ' 
-        ListToolStripMenuItem.Name = "ListToolStripMenuItem"
-        ListToolStripMenuItem.Size = New Size(180, 22)
-        ListToolStripMenuItem.Text = "List All"
+        ListProductsToolStripMenuItem.Name = "ListProductsToolStripMenuItem"
+        ListProductsToolStripMenuItem.Size = New Size(180, 22)
+        ListProductsToolStripMenuItem.Text = "List All"
         ' 
         ' ClientToolStripMenuItem
         ' 
@@ -83,13 +84,13 @@ Partial Class MainPage
         ' CreateClientToolStripMenuItem1
         ' 
         CreateClientToolStripMenuItem1.Name = "CreateClientToolStripMenuItem1"
-        CreateClientToolStripMenuItem1.Size = New Size(180, 22)
+        CreateClientToolStripMenuItem1.Size = New Size(109, 22)
         CreateClientToolStripMenuItem1.Text = "Create"
         ' 
         ' ListAllToolStripMenuItem
         ' 
         ListAllToolStripMenuItem.Name = "ListAllToolStripMenuItem"
-        ListAllToolStripMenuItem.Size = New Size(180, 22)
+        ListAllToolStripMenuItem.Size = New Size(109, 22)
         ListAllToolStripMenuItem.Text = "List All"
         ' 
         ' ProviderToolStripMenuItem
@@ -102,13 +103,13 @@ Partial Class MainPage
         ' CreateProviderToolStripMenuItem2
         ' 
         CreateProviderToolStripMenuItem2.Name = "CreateProviderToolStripMenuItem2"
-        CreateProviderToolStripMenuItem2.Size = New Size(180, 22)
+        CreateProviderToolStripMenuItem2.Size = New Size(109, 22)
         CreateProviderToolStripMenuItem2.Text = "Create"
         ' 
         ' ListAllToolStripMenuItem1
         ' 
         ListAllToolStripMenuItem1.Name = "ListAllToolStripMenuItem1"
-        ListAllToolStripMenuItem1.Size = New Size(180, 22)
+        ListAllToolStripMenuItem1.Size = New Size(109, 22)
         ListAllToolStripMenuItem1.Text = "List All"
         ' 
         ' UserToolStripMenuItem
@@ -121,20 +122,28 @@ Partial Class MainPage
         ' CreateUserToolStripMenuItem3
         ' 
         CreateUserToolStripMenuItem3.Name = "CreateUserToolStripMenuItem3"
-        CreateUserToolStripMenuItem3.Size = New Size(180, 22)
+        CreateUserToolStripMenuItem3.Size = New Size(109, 22)
         CreateUserToolStripMenuItem3.Text = "Create"
         ' 
         ' ListAllToolStripMenuItem2
         ' 
         ListAllToolStripMenuItem2.Name = "ListAllToolStripMenuItem2"
-        ListAllToolStripMenuItem2.Size = New Size(180, 22)
+        ListAllToolStripMenuItem2.Size = New Size(109, 22)
         ListAllToolStripMenuItem2.Text = "List All"
+        ' 
+        ' PanelMainPageContainer
+        ' 
+        PanelMainPageContainer.Location = New Point(12, 27)
+        PanelMainPageContainer.Name = "PanelMainPageContainer"
+        PanelMainPageContainer.Size = New Size(776, 411)
+        PanelMainPageContainer.TabIndex = 1
         ' 
         ' MainPage
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(PanelMainPageContainer)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1
         Name = "MainPage"
@@ -159,4 +168,6 @@ Partial Class MainPage
     Friend WithEvents UserToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CreateUserToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents ListAllToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents PanelMainPageContainer As Panel
+    Friend WithEvents ListProductsToolStripMenuItem As ToolStripMenuItem
 End Class
